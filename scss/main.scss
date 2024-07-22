@@ -1,0 +1,11 @@
+//reset
+@import './config/vars';
+@import './config/reset';
+@import './config/mixins';
+
+//layout - estructura html
+@import './cabeza';
+@import './principal';
+@import './pie';
+@import './mq';
+ 
