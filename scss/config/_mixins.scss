@@ -2,12 +2,12 @@
     padding: $p;
     margin: $m;
   }
-  @mixin alineacion ($d, $a, $j){
-    display: $d;
-    align-items: $a;
-    justify-content: $j;
-  }
-  @mixin medidas ($ancho, $alto){
-    width: $ancho;
-    height: $alto;
-  }
+@mixin alineacion ($d, $a, $j){
+  display: $d;
+  align-items: $a;
+  justify-content: $j;
+}
+@mixin medidas ($ancho, $alto){
+  width: $ancho;
+  height: $alto;
+}

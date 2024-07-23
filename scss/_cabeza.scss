@@ -43,21 +43,17 @@
     background-color: #f8f8f8;
     border-radius: 0.25rem;
 }
-
 .breadcrumb li {
     margin: 0 0.5rem;
 }
-
 .breadcrumb li + li:before {
     content: ">";
     margin-right: 0.5rem;
 }
-
 .breadcrumb a {
     text-decoration: none;
     color: #007bff;
 }
-
 .breadcrumb a:hover {
     text-decoration: underline;
 }

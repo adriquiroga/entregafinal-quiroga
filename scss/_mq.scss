@@ -12,27 +12,27 @@
           "sexto"
           "quinto quinto";
     }
-  }  
-  @media (max-width: 480px) {
-    .video {
-      width: 100%;
-      height: auto;
-    }    
-    .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-          "primero "
-          "segundo"
-          "tercero"
-          "cuarto"
-          "sexto"
-          "quinto";
-    }    
-    .imagenes img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%; 
-        height: auto;  
-    }
+}  
+@media (max-width: 480px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }    
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "primero "
+        "segundo"
+        "tercero"
+        "cuarto"
+        "sexto"
+        "quinto";
+  }    
+  .imagenes img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%; 
+      height: auto;  
   }
+}
