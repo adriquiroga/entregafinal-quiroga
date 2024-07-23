@@ -6,9 +6,10 @@
   --text-color: #000000;
   --color-frase: #ec3e09 ;
   --background-frase: #7fffd4;
+  --color-preguntas: #f84d09;
   --font-family: "Montserrat", sans-serif;
-  --font-size-base: 16px;
-  --font-size-large: 24px;
+  --font-size-base: 20px;
+  --font-size-large: 50px;
   --font-size-small: 12px;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -139,7 +140,35 @@ body {
   height: 20px;
 }
 
-.principal, .color-fondo {
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+  border-radius: 0.25rem;
+}
+
+.breadcrumb li {
+  margin: 0 0.5rem;
+}
+
+.breadcrumb li + li:before {
+  content: ">";
+  margin-right: 0.5rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.principal {
   display: flex;
   row-gap: 10px;
   flex-direction: column;
@@ -149,12 +178,15 @@ body {
   background-position: center;
 }
 
-.titulo1, .titulo2, .titulo3 {
+.titulo3, .titulo4, .titulo1 {
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 20px;
   text-align: center;
-  color: var(--primary-color);
+}
+
+.titulo3 {
+  color: var(--text-color);
 }
 
 .titulo3 {
@@ -162,14 +194,13 @@ body {
   margin-bottom: 10px;
   padding: 20px;
   text-align: center;
-  color: var(--text-color);
   align-self: baseline;
-  font-size: 20px;
+  font-size: var(--font-size-base);
 }
 
-.titulo2 {
-  align-self: baseline;
-  font-size: 30px;
+.titulo4 {
+  font-size: var(--font-size-large);
+  color: var(--color-preguntas);
 }
 
 .tama5 {
@@ -466,6 +497,13 @@ h2 {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-areas: "primero " "segundo" "tercero" "cuarto" "sexto" "quinto";
+  }
+  .imagenes img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
   }
 }
 

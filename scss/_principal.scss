@@ -1,4 +1,4 @@
-.principal, .color-fondo {
+.principal {
     display: flex;
     row-gap: 10px;
     flex-direction:column;
@@ -7,26 +7,27 @@
     background-size:cover; 
     background-position: center; 
   }  
-  .titulo1, .titulo2, .titulo3 {
+  .titulo3, .titulo4, .titulo1 {
     margin-top: 20px;
     margin-bottom: 40px;
     padding: 20px;
     text-align: center;
-    color: var(--primary-color);
+  }
+  .titulo3{
+    color: var(--text-color);
   }
   .titulo3 {
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 20px;
     text-align: center;
-    color: var(--text-color);
     align-self: baseline;
-    font-size: 20px;
+    font-size: var(--font-size-base);    
   }
-  .titulo2 {
-    align-self: baseline;
-    font-size: 30px;
-  }  
+  .titulo4{
+    font-size: var(--font-size-large);
+    color: var(--color-preguntas);
+  }
   .tama5 {
     @include medidas(80px, 80px);
     align-items: center;
